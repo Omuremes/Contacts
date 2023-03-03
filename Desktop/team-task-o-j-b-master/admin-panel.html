@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JDM CARS</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="body">
+    <header class="header z-1">
+      <div class="container">
+        <div class="navbar">
+          <img
+            class="logo"
+            src="./img/pngtree-car-logo-vector-png-image_1811627.jpg"
+            alt="logo"
+          />
+          <div class="search-panel">
+            <input type="text" placeholder="Search" id="search" />
+            <button class="btn-search">
+              <img src="./img/search-icon.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="d-flex justify-content-center">
+      <form
+        id="add-form"
+        class="d-flex flex-column w-50 align-items-center mt-5"
+      >
+        <input
+          type="text"
+          class="mb-2 w-50 form-control inp"
+          placeholder="Carname"
+          id="carname"
+        />
+        <input
+          type="text"
+          class="mb-2 w-50 form-control inp"
+          placeholder="price"
+          id="price"
+        />
+        <input
+          type="text"
+          class="mb-2 w-50 form-control inp"
+          placeholder="description"
+          id="description"
+        />
+        <input
+          type="text"
+          class="mb-2 w-50 form-control inp"
+          placeholder="image URL"
+          id="image"
+        />
+        <button class="z-1 btn w-40 mt-5" id="btn">Add</button>
+      </form>
+    </div>
+
+    <section class="tree z-0">
+      <div>
+        <img class="tree-one" src="./img/sakura-tree-1.png" alt="" />
+        <img class="tree-two" src="./img/sakura-tree-2.png" alt="" />
+      </div>
+    </section>
+
+    <div id="car-list" class="d-flex flex-wrap justify-content-center">
+      <div class="card m-5" style="width: 18rem">
+        <img
+          src="https://www.motortrend.com/uploads/sites/25/2020/09/Top-20-JDM-Nissans-Hirokk-Koga-93-S13-Onevia-01.jpg?fit=around%7C875:492"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-danger">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item prev">
+          <a class="page-link" href="#">Prev</a>
+        </li>
+        <div class="pag-list d-flex">1</div>
+        <li class="page-item next"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <img src="./img/Copyrigt-icon.png" alt="" />
+          <h1>Copyright :</h1>
+          <p class="paragraph">Boki</p>
+          <p class="paragraph">Johny</p>
+          <p class="paragraph">Omka</p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex flex-column w-100 align-items-center admin">
+              <h2>Edit cars</h2>
+              <input
+                type="text"
+                id="edit-car"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit carname"
+              />
+              <input
+                type="text"
+                id="edit-price"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit price"
+              />
+              <input
+                type="text"
+                id="edit-descr"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit description"
+              />
+              <input
+                type="text"
+                id="edit-image"
+                class="mb-2 w-100 form-control inp"
+                placeholder="edit URL"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              data-bs-dismiss="modal"
+              class="btn btn-primary"
+              id="btn-save-edit"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
+
